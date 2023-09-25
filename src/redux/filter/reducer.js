@@ -1,7 +1,7 @@
 import { initialState } from "../todos/initialState";
 import { COLORCHANGED, STATUSCHANGED } from "./actionType";
 
-const reducer = (state=initialState, action) =>{
+const filterReducer = (state=initialState, action) =>{
     switch (action.type) {
         case STATUSCHANGED:
             return {
@@ -36,4 +36,4 @@ const reducer = (state=initialState, action) =>{
     }
 }
 
-export default reducer;
+export default filterReducer; 
